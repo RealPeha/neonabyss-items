@@ -22,7 +22,7 @@ const IndexPage = () => {
           <ItemList
             items={items}
             item={Item}
-            spriteSheetXAmount={3}
+            spriteSheetXAmount={25}
             onHover={handleHover}
           />
         </div>

@@ -23,13 +23,14 @@ body {
 
 .content {
     width: 100%;
-    max-width: 800px;
+    max-width: 960px;
     position: relative;
     border-radius: 20px;
     background: radial-gradient(ellipse at center, rgb(49, 44, 24) 0%, rgba(0, 0, 0, 0.73) 100%);
     box-shadow: 0 0 9px 3px #F2D02B;
     padding: 1rem;
     margin: 2rem;
+    margin-top: 10rem;
 }
 
 .content::before {
