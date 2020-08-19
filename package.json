@@ -1,0 +1,21 @@
+{
+  "name": "neonabyss-items",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "gatsby develop",
+    "serve": "gatsby serve",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.34",
+    "@emotion/css": "^10.0.27",
+    "@emotion/styled": "^10.0.27",
+    "gatsby": "^2.24.47",
+    "gatsby-plugin-emotion": "^4.3.10",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

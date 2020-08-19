@@ -1,0 +1,192 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url(/bg.jpg) no-repeat fixed center top / cover #000;
+}
+
+.wrapper, .navigation, .main, .sidebar, .content {
+    display: flex;
+}
+.root, .root > div, .wrapper {
+    height: 100%;
+}
+
+.main {
+    /* margin: 80px auto 50px auto; */
+    margin: auto;
+}
+
+.content {
+    width: 100%;
+    max-width: 800px;
+    position: relative;
+    border-radius: 20px;
+    background: radial-gradient(ellipse at center, rgb(49, 44, 24) 0%, rgba(0, 0, 0, 0.73) 100%);
+    box-shadow: 0 0 9px 3px #F2D02B;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.content::before {
+    content: '';
+    display: block;
+    background: url(https://mirror-gateway.wix.echothing.com/wixstatic/static/media/3d55e4_a61e3246b6c5457d9e7d5c62fdcc3b5d~mv2.png/v1/fill/w_426,h_256,al_c,q_85/neon_banner_logo_en.webp);
+    background-size: 100% 100%;
+    width: 290px;
+    height: 174px;
+    filter: drop-shadow(0 0 10px #08F7FE);
+    animation: flashing 4s linear infinite;
+    transform: rotate(-30deg);
+    position: absolute;
+    top: -100px;
+    left: -200px;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background: url(/items.png) top left no-repeat;
+    width: 80px;
+    height: 80px;
+    transition: filter .05s;
+}
+
+.item:hover {
+    filter: drop-shadow(0 0 10px #08F7FE);
+    cursor: pointer;
+    animation: flashing 2s linear infinite;
+}
+
+@keyframes flashing {
+    from {
+        opacity: 0.9;
+    }
+
+    4% {
+        opacity: .9;
+    }
+
+    6% {
+        opacity: .85;
+    }
+
+    8% {
+        opacity: .95;
+    }
+
+    10% {
+        opacity: .90;
+    }
+
+    11% {
+        opacity: .922;
+    }
+
+    12% {
+        opacity: .9;
+    }
+
+    14% {
+        opacity: .95;
+    }
+
+    16% {
+        opacity: .98;
+    }
+
+    17% {
+        opacity: .9;
+    }
+
+    19% {
+        opacity: .93;
+    }
+
+    20% {
+        opacity: .99;
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: .94;
+    }
+
+    28% {
+        opacity: .98;
+    }
+
+    37% {
+        opacity: .93;
+    }
+
+    38% {
+        opacity: .5;
+    }
+
+    39% {
+        opacity: .96;
+    }
+
+    42% {
+        opacity: 1;
+    }
+
+    44% {
+        opacity: .97;
+    }
+
+    46% {
+        opacity: .94;
+    }
+
+    56% {
+        opacity: .9;
+    }
+
+    58% {
+        opacity: .9;
+    }
+
+    60% {
+        opacity: .99;
+    }
+
+    68% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: .9;
+    }
+
+    72% {
+        opacity: .95;
+    }
+
+    93% {
+        opacity: .93;
+    }
+
+    95% {
+        opacity: .95;
+    }
+
+    97% {
+        opacity: .93;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
