@@ -10,6 +10,7 @@ export default (props) => {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet" />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

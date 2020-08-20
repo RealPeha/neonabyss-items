@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 // Components
 import Item from '../components/Item'
@@ -8,22 +8,24 @@ import ItemList from '../components/ItemList'
 import items from '../data/items.json'
 
 const IndexPage = () => {
-  const handleHover = (item) => {
-    console.log(item);
-  }
+  const [item, setItem] = useState()
 
   return (
-    <div className="wrapper">
+    <div className="wrapper">>
       <div className="navigation">
 
       </div>
       <div className="main">
+          {/* <div className="sidebar">
+            {item && item.description}
+          </div> */}
         <div className="content">
           <ItemList
             items={items}
             item={Item}
             spriteSheetXAmount={25}
-            onHover={handleHover}
+            title="Items"
+            onHover={setItem}
           />
         </div>
       </div>

@@ -6,10 +6,11 @@ const ItemList = ({
     itemWidth = 80,
     itemHeight = 80,
     spriteSheetXAmount,
+    title,
     onHover
 }) => {
   return (
-    <div className="item-list">
+    <div className="item-list" data-title={title}>
       {
         items.map((item, index) => {
           const x = (index % spriteSheetXAmount) * itemWidth
@@ -28,4 +29,4 @@ const ItemList = ({
   )
 }
 
-export default ItemList
+export default React.memo(ItemList)
