@@ -2,7 +2,8 @@
     {
         "id":1,
         "name":"2077",
-        "description":"This is the future, and you're a big dreamer. The more shields you have, the more damage your weapon does."
+        "description":"This is the future, and you're a big dreamer. The more shields you have, the more damage your weapon does.",
+        "keywords": ["2077", "киберпанк"]
     },
     {
         "id":2,

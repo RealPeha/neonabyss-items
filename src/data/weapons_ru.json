@@ -1,0 +1,512 @@
+[
+    {
+       "id": 1,
+       "name": "Airgun",
+       "description": "It's so light, it's as if it doesn't exist.",
+       "ability": "[Active] Slow down your falling speed.",
+       "type": "Normal",
+       "output": "Invisible Bullets",
+       "rateOfFire": "Fast",
+       "notes": "Infinite range."
+    },
+    {
+       "id": 2,
+       "name": "Black Widow",
+       "description": "Hold your breath",
+       "ability": "[Active] Roll forward a short distance.",
+       "type": "Charge",
+       "output": "Penetrating Bullets",
+       "rateOfFire": "-",
+       "notes": "-"
+    },
+    {
+       "id": 3,
+       "name": "Black Raven",
+       "description": "The wisper in the dark...",
+       "ability": "[Active] Detonate yourself! Cost half a heart and one crystal.",
+       "type": "Normal",
+       "output": "Laser",
+       "rateOfFire": "Normal",
+       "notes": "Infinite range. Shoot two lasers individually then reload for 2 seconds. The laser is piercing: you can hit multiple enemies in the same direction."
+    },
+    {
+       "id": 4,
+       "name": "Death Ray",
+       "description": "Gaze from the Abyss",
+       "ability": "[Active Item] Order! Clear all bullets and damage all enemies in this room. Costs 1 bomb and 1 crystal.[Active Item] Blink a short distance forward.",
+       "type": "Charge",
+       "output": "Laser",
+       "rateOfFire": "Slow",
+       "notes": "Charge for a minimum of 1 second and release button press to emit a laser with infinite range."
+    },
+    {
+       "id": 5,
+       "name": "Destiny",
+       "description": "It's up to you... or fate.",
+       "ability": "[Active] Reroll your gun's variables. Try your luck! Randomly change the properties of this weapon. Costs 10 coins.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Slow",
+       "notes": "-"
+    },
+    {
+       "id": 6,
+       "name": "Destroyer",
+       "description": "Scream from hell.",
+       "ability": "[Passive] Have a chance to get evil sprites each time you kill an enemy.",
+       "type": "Normal",
+       "output": "Small Lasers",
+       "rateOfFire": "Fast",
+       "notes": "-"
+    },
+    {
+       "id": 7,
+       "name": "Famine",
+       "description": "Face your fear.",
+       "ability": "[Active] Get a silver egg. A silver egg never hatches [Active Item] Summon a wooden barrel. Cost 2 crystals",
+       "type": "Normal",
+       "output": "Tracking Bullets",
+       "rateOfFire": "-",
+       "notes": "Requires 1.7 second reload after 4 shots."
+    },
+    {
+       "id": 8,
+       "name": "Firekiss",
+       "description": "You know nothing.",
+       "ability": "[Passive] The more hearts you have, the more bullets you can fire.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "-",
+       "notes": "Shoots two bullets."
+    },
+    {
+       "id": 9,
+       "name": "Forge",
+       "description": "Patience is also a weapon.",
+       "ability": "[Active] You can lift a box or barrel!",
+       "type": "Charge",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Charge up for more bullets."
+    },
+    {
+       "id": 10,
+       "name": "Frostfire",
+       "description": "Fear and Trembling! Charge and throw a frost bomb.",
+       "ability": "X",
+       "type": "Charge",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Charge and release to fire several ice grenades."
+    },
+    {
+       "id": 11,
+       "name": "Giant Beast",
+       "description": "You must like this! But use it... cautiously.",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Rockets",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 12,
+       "name": "Golden Ripple",
+       "description": "A white lie.",
+       "ability": "[Passive] When your bullets hit a coin, it may double, or disappear. [Active] Drop random coins.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "-",
+       "notes": "-"
+    },
+    {
+       "id": 13,
+       "name": "Golden Sam",
+       "description": "Power is more important than precision.",
+       "ability": "[Active] Drop random coins.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Fast",
+       "notes": "-"
+    },
+    {
+       "id": 14,
+       "name": "Guardian",
+       "description": "Good night, sleep tight.",
+       "ability": "[Passive] You have a chance to get guardian sprites each time you kill an enemy.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Bullets make circle movements instead of traveling straight."
+    },
+    {
+       "id": 15,
+       "name": "Hawkeye",
+       "description": "I'm watching you!",
+       "ability": "[Passive+Active] Enemies hit by this gun will be marked. You can detonate them all at once. Costs 2 crystals.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 16,
+       "name": "Jimmy",
+       "description": "There are fish bones all over the place.",
+       "ability": "[Passive] When your bullets hit the coin, it may double, or disappear. [Active] Drop Random Coins",
+       "type": "Normal",
+       "output": "Fishbones",
+       "rateOfFire": "Normal",
+       "notes": "Splitting bullets"
+    },
+    {
+       "id": 17,
+       "name": "Judgement",
+       "description": "Justice will be dispenced in 3...2...",
+       "ability": "[Active] Get a key. Cost 5 crystals.",
+       "type": "Normal",
+       "output": "Bullets/Lasers",
+       "rateOfFire": "Normal",
+       "notes": "Shoots bullets while charging up to shoot a laser."
+    },
+    {
+       "id": 18,
+       "name": "Keygun",
+       "description": "After recharging, launches a golden key. It can open all locks.",
+       "ability": "X",
+       "type": "Charge",
+       "output": "Normal",
+       "rateOfFire": "Slow",
+       "notes": "Bullets can open all locks."
+    },
+    {
+       "id": 19,
+       "name": "Light Dancer",
+       "description": "Dancing on the battlefield",
+       "ability": "[Passive] This weapon deals melee damage.[Active Item] Open all locked chests and doors in this room. Costs 5 crystals[Active] Fire extinguisher: Fly freely. No cost",
+       "type": "Normal",
+       "output": "Laser Beam",
+       "rateOfFire": "Normal",
+       "notes": ""
+    },
+    {
+       "id": 20,
+       "name": "Lullaby",
+       "description": "Good night, sleep tight.",
+       "ability": "[Passive] Your bullet can pick up everything except weapons.",
+       "type": "Normal",
+       "output": "Electric",
+       "rateOfFire": "Normal",
+       "notes": "Bullets make circle movements instead of traveling straight."
+    },
+    {
+       "id": 21,
+       "name": "Melody",
+       "description": "Looks ordinary, but hides a mysterious secret weapon",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Matt's starter weapon"
+    },
+    {
+       "id": 22,
+       "name": "Messenger",
+       "description": "Delivering eternal romance.",
+       "ability": "[Active] Upgrade your weapon in the current room.",
+       "type": "Normal",
+       "output": "Boomerang",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 23,
+       "name": "Meteor",
+       "description": "Tears from heaven.",
+       "ability": "[Active] You have a chance to open locks or hurt yourself.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Fast",
+       "notes": "Shoots 3 bullets (9 bullets per second!)"
+    },
+    {
+       "id": 24,
+       "name": "Nebula",
+       "description": "There is a chance you might fire a laser.",
+       "ability": "[Active] Drop random pickups. Cost some coins.",
+       "type": "Normal",
+       "output": "Bullets/Laser",
+       "rateOfFire": "Normal",
+       "notes": "Shoots 3 to 5 bullets with a random chance for a laser beam."
+    },
+    {
+       "id": 25,
+       "name": "Noise",
+       "description": "The ideal of the past.",
+       "ability": "[Active] Get an egg.[Active] Summon a ladder.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Item has two different sprites.Bullets split into three bullets at the end of their travel distance."
+    },
+    {
+       "id": 26,
+       "name": "Orion",
+       "description": "All those moments will be lost in time...",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Laser",
+       "rateOfFire": "Normal",
+       "notes": "R-6's starter weapon."
+    },
+    {
+       "id": 27,
+       "name": "Passenger",
+       "description": "Enjoy yourself!",
+       "ability": "[Active] Damages all enemies in the room. Costs 3 crystals.",
+       "type": "Normal",
+       "output": "Bouncy",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 28,
+       "name": "Pink Flame",
+       "description": "A soul burning in agitation.",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Saya's starter weapon"
+    },
+    {
+       "id": 29,
+       "name": "Phantom",
+       "description": "Everything is... slowing... dowwwnnnn",
+       "ability": "[Active] Slow down time.",
+       "type": "X",
+       "output": "Normal",
+       "rateOfFire": "Bullets",
+       "notes": "Slow"
+    },
+    {
+       "id": 30,
+       "name": "Plastic Gun",
+       "description": "Refresh all items to pickups.",
+       "ability": "[Active] Refresh all closed chests.[Active] Refresh all items and pickups.[Active] Refresh all items to pickups.",
+       "type": "X",
+       "output": "Normal",
+       "rateOfFire": "Normal",
+       "notes": "Normal"
+    },
+    {
+       "id": 31,
+       "name": "Rainbow",
+       "description": "Color the world!",
+       "ability": "[Passive] Eggs will never hatch.",
+       "type": "Normal",
+       "output": "-",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 32,
+       "name": "Rebel",
+       "description": "Listen to the call of your heart.",
+       "ability": "[Active] Upgrade your weapon in the current room.",
+       "type": "Normal",
+       "output": "Small Lasers",
+       "rateOfFire": "Fast",
+       "notes": "-"
+    },
+    {
+       "id": 33,
+       "name": "Red Dragon",
+       "description": "The ultimate weapon...Destroy everything!!",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Homing Rockets",
+       "rateOfFire": "Fast",
+       "notes": "Shoots 2 homing rockets per shot up to 8 then reloads."
+    },
+    {
+       "id": 34,
+       "name": "Seagull",
+       "description": "Waiting for your moment to burst from the clouds.",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Anna's starter weapon"
+    },
+    {
+       "id": 35,
+       "name": "Sentinel",
+       "description": "Added tracking modules but sacrificed the performance.",
+       "ability": "[Active + Passive] Hearts can be stored and thrown out. Throwing out hearts does not cost any crystals.",
+       "type": "Normal",
+       "output": "Tracking Bullets",
+       "rateOfFire": "Slow",
+       "notes": "-"
+    },
+    {
+       "id": 36,
+       "name": "Shadow",
+       "description": "Tiny letters inscribed on the barrel read: Wednesday.",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Wade's starter weapon"
+    },
+    {
+       "id": 37,
+       "name": "Silver Moon",
+       "description": "Mysterious weapon from another dimension.",
+       "ability": "[Active] Fall to the ground, cracking any stones below you.",
+       "type": "Normal",
+       "output": "Laser",
+       "rateOfFire": "-",
+       "notes": "-"
+    },
+    {
+       "id": 38,
+       "name": "Song of Joy",
+       "description": "The most important thing in life is to be happy.",
+       "ability": "[Active] Gain the ability to fly in current room.[Active] Hatch an egg immediately.[Active] You can fly in the current room.",
+       "type": "Normal",
+       "output": "Bouncy",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 39,
+       "name": "Soul Bringer",
+       "description": "Unleash your potential!",
+       "ability": "[Passive] This weapon deals melee damage.  [Active] Be invincible for a short time.",
+       "type": "Normal",
+       "output": "Laser",
+       "rateOfFire": "Normal",
+       "notes": "Active ability grants iframes for 5 seconds. The laser fires as long as you hold down the trigger and you can adjust your aim while your fire."
+    },
+    {
+       "id": 40,
+       "name": "Star Burst",
+       "description": "The crystallization of future technology.",
+       "ability": "X",
+       "type": "Charge",
+       "output": "Laser",
+       "rateOfFire": "Slow",
+       "notes": "-"
+    },
+    {
+       "id": 41,
+       "name": "Summer",
+       "description": "Another one bites the dust.",
+       "ability": "[Active] Summon a wooden box.",
+       "type": "Charge",
+       "output": "Music Notes",
+       "rateOfFire": "Normal",
+       "notes": "Orbiting the Player instead of shooting"
+    },
+    {
+       "id": 42,
+       "name": "Swallow",
+       "description": "Close your eyes.",
+       "ability": "[Active] Increase your weapon damage in the current room.",
+       "type": "Normal",
+       "output": "Bouncy Bullets",
+       "rateOfFire": "Normal",
+       "notes": "-"
+    },
+    {
+       "id": 43,
+       "name": "Terry",
+       "description": "There are fish bones all over the place.",
+       "ability": "X",
+       "type": "Normal",
+       "output": "Fish bones",
+       "rateOfFire": "Normal",
+       "notes": "Splitting bullets"
+    },
+    {
+       "id": 44,
+       "name": "The 8th Color",
+       "description": "A wizard's secret weapon.",
+       "ability": "[Passive] Add an extra crystal container when your weapon is upgraded.",
+       "type": "Normal",
+       "output": "StarsBouncy BulletsBulletsLaser",
+       "rateOfFire": "Normal",
+       "notes": "Cycles through the 4 different projectiles."
+    },
+    {
+       "id": 45,
+       "name": "The Blaster",
+       "description": "Patience, young grasshopper... Charge this before firing for a shot worth waiting for.",
+       "ability": "X",
+       "type": "Charge",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Click to fire. Hold to charge."
+    },
+    {
+       "id": 46,
+       "name": "Thunder",
+       "description": "ROCK AND ROLL!",
+       "ability": "[Passive] Your music deals melee damage to enemies![Active] Upgrade your gun level permanently.",
+       "type": "Normal",
+       "output": "Musical Notes",
+       "rateOfFire": "Normal",
+       "notes": "Orbiting the player instead of shooting."
+    },
+    {
+       "id": 47,
+       "name": "Triggerfish",
+       "description": "It has a dream...",
+       "ability": "[Active] You can fish in pools of water.[Active] Get an egg.",
+       "type": "Normal",
+       "output": "Normal",
+       "rateOfFire": "Normal",
+       "notes": "Fire slow-moving bullets that travel in a spiral path."
+    },
+    {
+       "id": 48,
+       "name": "Twins",
+       "description": "Quantum entanglement technique",
+       "ability": "[Active] Increase gun's damage on the current room. Cost 2 crystals.",
+       "type": "Normal",
+       "output": "Helix Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Add one bullet for every upgrade"
+    },
+    {
+       "id": 49,
+       "name": "Vortex",
+       "description": "For Honor, for Atlantis!",
+       "ability": "[Active] Spend hearts to get coins.",
+       "type": "Whip Beam",
+       "output": "Electric",
+       "rateOfFire": "Normal",
+       "notes": "X"
+    },
+    {
+       "id": 50,
+       "name": "White Fox",
+       "description": "Charming and dangerous.",
+       "ability": "[Active] Fires an energy ball.",
+       "type": "Normal",
+       "output": "Normal, Star",
+       "rateOfFire": "Normal",
+       "notes": "For every bullet you get instead a star cape that appears when shooting, that is able to track and damage enemies in it's range."
+    },
+    {
+       "id": 51,
+       "name": "Wild Wolf",
+       "description": "More blood!",
+       "ability": "[Passive] Each time an enemy is killed, this weapon's damage increases.",
+       "type": "Normal",
+       "output": "Bullets",
+       "rateOfFire": "Normal",
+       "notes": "Once you get hurt, it will return to it's original state."
+    }
+]

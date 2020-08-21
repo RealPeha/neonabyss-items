@@ -21,6 +21,7 @@ const ItemList = ({
               key={item.name}
               offset={[-x, -y]}
               onHover={() => onHover(item)}
+              onLeave={() => onHover()}
             />
           )
         })

@@ -1,7 +1,7 @@
 import React from 'react'
 import css from '@emotion/css'
 
-const Item = ({ offset, onHover, onLeave }) => {
+const Weapon = ({ offset, onHover, onLeave }) => {
     const [x = 0, y = 0] = offset
 
     return (
@@ -14,4 +14,4 @@ const Item = ({ offset, onHover, onLeave }) => {
     )
 }
 
-export default Item
+export default Weapon
