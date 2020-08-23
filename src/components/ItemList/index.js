@@ -1,27 +1,34 @@
 import React from 'react'
 
+import { Item } from '../'
+
+import getItemOffset from '../../utils/getItemOffset'
+
 const ItemList = ({
     items = [],
-    item: Item,
-    itemWidth = 80,
-    itemHeight = 80,
-    spriteSheetXAmount,
     title,
-    onHover
+    type,
+    onHover,
+    onClick,
 }) => {
   return (
     <div className="item-list" data-title={title}>
       {
-        items.map((item, index) => {
-          const x = (index % spriteSheetXAmount) * itemWidth
-          const y = (index / spriteSheetXAmount | 0) * itemHeight
+        items.map((item) => {
+          const offset = getItemOffset(item.id, type)
 
           return (
             <Item
               key={item.name}
-              offset={[-x, -y]}
+              type={type}
+              offset={offset}
               onHover={() => onHover(item)}
               onLeave={() => onHover()}
+              onClick={() => onClick({
+                ...item,
+                offset,
+                type,
+              })}
             />
           )
         })

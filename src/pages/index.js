@@ -1,19 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useCallback } from 'react'
 
 // Components
-import Item from '../components/Item'
-import Weapon from '../components/Weapon'
-import ItemList from '../components/ItemList'
-import Search from '../components/Search'
+import {
+  ItemInfo,
+  Search,
+  ItemList,
+  Text,
+  Modal
+} from '../components'
+
+import getItemOffset from '../utils/getItemOffset'
 
 // Items
 import itemsRaw from '../data/items_ru.json'
 import weaponsRaw from '../data/weapons_ru.json'
 
-const IndexPage = () => {
-  const [item, setItem] = useState()
-  const [items, setItems] = useState(itemsRaw)
-  const [weapons, setWeapons] = useState(weaponsRaw)
+const IndexPage = ({ location, navigate }) => {
+  const [selectedItem, setSelectedItem] = useState()
+  const [modalData, setModalData] = useState()
+  const [{ items, weapons }, setItems] = useState({
+    items: itemsRaw,
+    weapons: weaponsRaw,
+  })
 
   const handleSearch = (query) => {
     const filteredItems = itemsRaw.filter(item => {
@@ -24,45 +32,82 @@ const IndexPage = () => {
       return item.description.includes(query)
     })
 
-    setItems(filteredItems)
-    setWeapons(filteredWeapons)
+    setItems({
+      items: filteredItems,
+      weapons: filteredWeapons,
+    })
   }
 
+  const handleModalOpen = useCallback(item => {
+    setModalData(item)
+    navigate(`?item=${item.id}${item.type ? `&type=${item.type}` : ''}`, { replace: true })
+  }, [])
+
+  const handleModalClose = useCallback(() => {
+    setModalData(null)
+  }, [])
+
+  useEffect(() => {
+    const search = location.search.slice(1).split('&').reduce((acc, query) => {
+      const [name, value] = query.split('=')
+    
+      return {...acc, [name]: value}
+    }, {})
+
+    const {
+      item: id,
+      type = ''
+    } = search
+
+    if (id) {
+      const item = (type === 'weapon' ? weaponsRaw : itemsRaw).find(item => item.id === +id)
+
+      setModalData({
+        ...item,
+        type,
+        offset: getItemOffset(item.id, type),
+      })
+    }
+  }, [])
+
   return (
-    <div className="wrapper">
-      <div className="navigation">
+    <div className="main">
+      {modalData && <Modal
+        data={modalData}
+        onClose={handleModalClose}
+      />}
+      <div className="sidebar-wrapper">
+        <div className="sidebar info-block">
+          {selectedItem
+            ? <ItemInfo item={selectedItem} />
+            : (
+              <div className="text-container">
+                <Text color="#837AAF">Тут будет какое-то описание сайта</Text>
+              </div>
+            )
+          }
+        </div>
 
+        <Search onChange={handleSearch}/>
       </div>
-      <div className="main">
-        <div className="sidebar-wrapper">
-          <div className="sidebar">
-            {item && item.description
-              ? item.description
-              : 'Тут будет какое-то сообщение'
-            }
-          </div>
+      <div className="content">
+        {/* Items */}
+        <ItemList
+          items={items}
+          title="Items"
+          type="item"
+          onHover={setSelectedItem}
+          onClick={handleModalOpen}
+        />
 
-          <Search onChange={handleSearch}/>
-        </div>
-        <div className="content">
-          {/* Items */}
-          <ItemList
-            items={items}
-            item={Item}
-            spriteSheetXAmount={25}
-            title="Items"
-            onHover={setItem}
-          />
-
-          {/* Weapons */}
-          <ItemList
-            items={weapons}
-            item={Weapon}
-            spriteSheetXAmount={3}
-            title="Weapons"
-            onHover={setItem}
-          />
-        </div>
+        {/* Weapons */}
+        <ItemList
+          items={weapons}
+          title="Weapons"
+          type="weapon"
+          onHover={setSelectedItem}
+          onClick={handleModalOpen}
+        />
       </div>
     </div>
   )

@@ -1,19 +1,17 @@
-import React, { useRef } from 'react'
+import React from 'react'
+
+import Text from '../Text'
 
 const Search = ({ onChange }) => {
-    // const [search, setSearch] = useState('');
-    const searchRef = useRef();
-
     const handleInput = (e) => {
         onChange(e.target.value)
     }
 
     return (
-        <input
-            className="search-input"
-            ref={searchRef}
-            onChange={handleInput}
-        />
+        <div className="search">
+            <Text fontSize="1.25rem" color="#B4E124" uppercase>Поиск</Text>
+            <input type="text" onChange={handleInput} />
+        </div>
     )
 }
 

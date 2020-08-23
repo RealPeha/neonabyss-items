@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 const NotFound = () => {
     return (
-        <div className="notfnound-container">
+        <div className="notfound-container">
             <h1>
                 Смерть — единственный выход
             </h1>
