@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{w2l6:function(n,t,a){"use strict";a.r(t);a("FdF9");var c=a("Wbzz"),e=a("qKvR");t.default=function(){return Object(e.a)("div",{className:"notfound-container"},Object(e.a)("h1",null,"Смерть — единственный выход"),Object(e.a)(c.a,{to:"/"},"На главную"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-7d161a5e45d76496f60a.js.map
