@@ -3,4 +3,5 @@ module.exports = {
         'gatsby-plugin-emotion',
         'gatsby-plugin-preact',
     ],
+    pathPrefix: "/neonabyss-items"
 }

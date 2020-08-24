@@ -41,7 +41,7 @@ const IndexPage = ({ location, navigate }) => {
   const handleModalOpen = useCallback(item => {
     setModalData(item)
     navigate(`?item=${item.id}${item.type ? `&type=${item.type}` : ''}`, { replace: true })
-  }, [])
+  }, [navigate])
 
   const handleModalClose = useCallback(() => {
     setModalData(null)
@@ -68,7 +68,7 @@ const IndexPage = ({ location, navigate }) => {
         offset: getItemOffset(item.id, type),
       })
     }
-  }, [])
+  }, [location.search])
 
   return (
     <div className="main">
